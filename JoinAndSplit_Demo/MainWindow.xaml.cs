@@ -34,6 +34,7 @@ namespace JoinAndSplit_Demo
 
         }
 
+        // 测试注释：开关模型集合
         public ObservableCollection<SwitchModel> SwitchModels { get; set; } = new ObservableCollection<SwitchModel>();
 
         /// <summary>
