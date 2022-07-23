@@ -1,0 +1,28 @@
+﻿<Window x:Class="JoinAndSplit_Demo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:JoinAndSplit_Demo"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="0">
+            <TextBox x:Name="textbox" TextWrapping="Wrap" AcceptsReturn="True" VerticalScrollBarVisibility="Visible" Text="1,3,4,5,7,9,10"/>
+        </Grid>
+        <Grid Grid.Column="1">
+            <StackPanel Orientation="Vertical" VerticalAlignment="Center">
+                <Button x:Name="lr" Content=">>" Height="27" Width="80" Margin="0,10" Click="lr_Click"/>
+                <Button x:Name="rl" Content="&lt;&lt;" Height="27" Width="80" Margin="0,10" Click="rl_Click"/>
+            </StackPanel>
+        </Grid>
+        <Grid Grid.Column="2">
+            <DataGrid x:Name="datagrid"/>
+        </Grid>
+    </Grid>
+</Window>
